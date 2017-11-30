@@ -22,14 +22,7 @@ export class CarSelectPage extends React.Component {
   render() {
     return (
       <div>
-      <DropdownList 
-        dataSource={this.props.makers} 
-        size={300}
-        name="makeList"
-        value="id"
-        text="name"        
-        onchange={this.getModels}
-        />
+      
       <DropdownList 
         dataSource={this.props.models} 
         size={300}

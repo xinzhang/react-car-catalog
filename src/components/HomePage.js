@@ -4,12 +4,7 @@ import { Link } from 'react-router-dom';
 const HomePage = () => {
   return (
     <div>
-      <h1>Cars</h1>
-
-      <h2>Get Started</h2>
-      <ol>
-        <li>Review the <Link to="/fuel-savings">demo app</Link></li>        
-      </ol>
+      <h3>Car catalog</h3>
     </div>
   );
 };
