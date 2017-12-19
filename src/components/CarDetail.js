@@ -2,7 +2,7 @@ import React from 'react';
 
 const CarDetail = ({car, ...props}) => (
     <div className="thumbnail paddingtop10">
-        <img className="thumbnail-size" src={car.imageUrl} alt={car.name} height="200px" />
+        <img className="thumbnail-size" src={car.imageUrl} alt={car.name} height="200" />
         <div className="caption">
             <hr />
             <h3>{car.name}</h3>
