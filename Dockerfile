@@ -14,6 +14,8 @@ RUN npm -v
 # copy client/web and common seperately. This is so it can be cached independently and webpack dist only built if client/web or common changes
 COPY public public
 COPY src src
-RUN npm run start
+
+EXPOSE 3000
 
 # docker compose files run commands to start node in different environments
+CMD ["npm", "start"]
