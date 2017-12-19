@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  xz-car-catalog:
+    container_name: car-catalog-web
+    image: car-catalog:0.1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+      - SERVER_PORT=5000
+    ports:
+      - 3500:3000
+    volumes:
+      - .:/var/app
+    command: npm run start
+
+  
+  
+  
