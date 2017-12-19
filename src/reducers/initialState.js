@@ -1,4 +1,3 @@
 export default {
-  makers:[],
-  models:[]
+  makers:[]
 };
